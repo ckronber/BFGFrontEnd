@@ -11,49 +11,51 @@
 <body>
     <h1>BFG Coffee Shop</h1>
     
-    <h2>CoffeeShop</h2>
-    <hr>
-    <h3>Post</h3>
-    <Form method = "POST" action = "https://localhost:44378/api/CoffeeShop">
-        ShopName <input type="text" name = "ShopName"> <br>
-        Location <input type="text" name = "Location"> <br>
-        Phone <input type="phone" name = "PhoneNumber"> <br>
-        Website <input type="url" name = "Website"> <br>
-        <input type="submit"  value="Submit">
-    </Form>
+    <div class="CoffeeShop">
+        <h2>CoffeeShop</h2>
+        <hr>
+        <h3>Post</h3>
+        <Form method = "POST" action = "https://localhost:44378/api/CoffeeShop">
+            ShopName <input type="text" name = "ShopName"> <br>
+            Location <input type="text" name = "Location"> <br>
+            Phone <input type="phone" name = "PhoneNumber"> <br>
+            Website <input type="url" name = "Website"> <br>
+            <input type="submit"  value="Submit">
+        </Form>
 
-    <h3>Get</h3>
-    <Form method = "GET" action = "https://localhost:44378/api/CoffeeShop">
-        <input type="submit"  value="Submit">
-    </Form>
+        <h3>Get</h3>
+        <Form method = "GET" action = "https://localhost:44378/api/CoffeeShop">
+            <input type="submit"  value="Submit">
+        </Form>
 
-    <h3>Get</h3>
-    <Form method = "GET" action = "https://localhost:44378/api/CoffeeShop" onsubmit="getShopId(id)" >
-        ShopId<input type="number" name = "id"> <br>
-        <input type="submit"  value="Submit" >
-    </Form>
+        <h3>Get</h3>
+        <Form method = "GET" action = "https://localhost:44378/api/CoffeeShop" onsubmit="getShopId(id)" >
+            ShopId<input type="number" name = "id"> <br>
+            <input type="submit"  value="Submit" >
+        </Form>
 
-    <h3>Update</h3>
-    <Form id="UpdateForm">
-        <!--CoffeeShop Id <input type="number" name = "CoffeeShopId"> <br>-->
-        ShopName <input type="text" name = "ShopName"> <br>
-        Location <input type="text" name = "Location"> <br>
-        Phone <input type="phone" name = "PhoneNumber"> <br>
-        Website <input type="url" name = "Website"> <br>
-        <input type="submit"  value="submit">
-    </Form>
+        <h3>Update</h3>
+        <Form id="UpdateForm">
+            <!--CoffeeShop Id <input type="number" name = "CoffeeShopId"> <br>-->
+            ShopName <input type="text" name = "ShopName"> <br>
+            Location <input type="text" name = "Location"> <br>
+            Phone <input type="phone" name = "PhoneNumber"> <br>
+            Website <input type="url" name = "Website"> <br>
+            <input type="submit"  value="submit">
+        </Form>
 
-    <h3>Delete</h3>
-    <Form method = "DELETE" action = "https://localhost:44378/api/CoffeeShop" onsubmit="getShopId(id)">
-        ShopId<input type="number" name = "id"> <br> 
-        <input type="submit"  value="submit">
-    </Form>
+        <h3>Delete</h3>
+        <Form method = "DELETE" action = "https://localhost:44378/api/CoffeeShop" onsubmit="getShopId(id)">
+            ShopId<input type="number" name = "id"> <br> 
+            <input type="submit"  value="submit">
+        </Form>
 
-    <script> 
-        function getShopId(id) {
-            return "https://localhost:44378/api/CoffeeShop/"+ id; 
-        }
-    </script>
+        <script> 
+            function getShopId(id) {
+                return "https://localhost:44378/api/CoffeeShop/"+ id; 
+            }
+        </script>
+    </div>
     
 </body>
 </html>
