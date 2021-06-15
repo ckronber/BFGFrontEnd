@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BFG Coffee Shop</title>
+</head>
+<body>
+    <h1>BFG Coffee Shop</h1>
+    <h2>Register</h2>
+    <Form method = "POST" action = "https://localhost:44378/api/Account/Register">
+        Email <input type="email" name = "Email"> <br>
+        Password <input type="password" name = "Password" id= "myInput"> 
+        <input type="checkbox" onclick="myFunction()">Show Password <br>
+        Confirm Password<input type="password" name = "ConfirmPassword" id= "myInput2">
+        <input type="checkbox" onclick="myFunction2()">Show Password <br>
+        <a href="C:\Users\ckron\Desktop\ElevenFiftyProjects\BFG FrontEnd\Login.html"><input type="submit"  value="Submit"></a>
+    </Form>
+
+    <script>
+        function myFunction() {
+        var x = document.getElementById("myInput");
+        if (x.type === "password") {
+            x.type = "text";
+        } else {
+            x.type = "password";
+        }
+        }
+
+        function myFunction2() {
+        var x = document.getElementById("myInput2");
+        if (x.type === "password") {
+            x.type = "text";
+        } else {
+            x.type = "password";
+        }
+        }
+    </script>
+
+</body>
+</html>
