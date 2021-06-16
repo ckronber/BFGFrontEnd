@@ -10,7 +10,7 @@
 </head>
 <body>
     <h1>BFG Coffee Shop</h1>
-    
+
     <div class="CoffeeShop">
         <h2>CoffeeShop</h2>
         <hr>
@@ -129,18 +129,18 @@
             Addition Id <input type="text" name = "AdditionId"> <br>
             Name <input type="text" name = "Name"> <br>
             Price <input type="decimal" name = "Price"> <br>
-            <input type="submit"  value="submit">
+            <input type="submit"  value="Submit">
         </Form>
 
         <h3>Delete</h3>
         <Form method = "DELETE" action = "https://localhost:44378/api/Addition" onsubmit="getAdditionId(id)">
             ShopId<input type="number" name = "id"> <br> 
-            <input type="submit"  value="submit">
+            <input type="submit"  value="Submit">
         </Form>
 
         <script> 
             function getAdditionId(id) {
-                return "https://localhost:44378/api/Addition/"+ id; 
+                return "https://localhost:44378/api/Addition/{id}"; 
             }
         </script>
     </div>  
@@ -148,46 +148,100 @@
         <h2>CoffeeShop</h2>
         <hr>
         <h3>Post</h3>
-        <Form method = "POST" action = "https://localhost:44378/api/menu">
+        <Form method = "POST" action = "https://localhost:44378/api/Menu">
             ItemName <input type="text" name = "ItemName"> <br>
             ItemPrice <input type="number" name = "ItemPrice"> <br>
-            CoffeeOrderId <input type="phone" name = "CoffeeOrderId"> <br>
+            CoffeeOrderId <input type="number" name = "CoffeeOrderId"> <br>
             <input type="submit"  value="Submit">
         </Form>
 
         <h3>Get</h3>
-        <Form method = "GET" action = "https://localhost:44378/api/menu">
+        <Form method = "GET" action = "https://localhost:44378/api/Menu">
             <input type="submit"  value="Submit">
         </Form>
 
         <h3>Get</h3>
-        <Form method = "GET" action = "https://localhost:44378/api/menu" onsubmit="getMenuId(id)" >
+        <Form method = "GET" action = "https://localhost:44378/api/Menu" onsubmit="getMenuId(id)" >
             ShopId<input type="number" name = "id"> <br>
             <input type="submit"  value="Submit" >
         </Form>
 
         <h3>Update</h3>
         <Form id="UpdateForm">
-            <!--CoffeeShop Id <input type="number" name = "MenuId"> <br>-->
-            ShopName <input type="text" name = "ShopName"> <br>
-            Location <input type="text" name = "Location"> <br>
-            Phone <input type="phone" name = "PhoneNumber"> <br>
-            Website <input type="url" name = "Website"> <br>
-            <input type="submit"  value="submit">
+            ItemName <input type="text" name = "ItemName"> <br>
+            ItemPrice <input type="number" name = "ItemPrice"> <br>
+            CoffeeOrderId <input type="number" name = "CoffeeOrderId"> <br>
+            <input type="submit"  value="Submit">
         </Form>
 
         <h3>Delete</h3>
-        <Form method = "DELETE" action = "https://localhost:44378/api/menu" onsubmit="getMenuId(id)">
+             <Form method = "DELETE" action = "https://localhost:44378/api/Menu" onsubmit="getMenuId(id)">
             ShopId<input type="number" name = "id"> <br> 
-            <input type="submit"  value="submit">
+            <input type="submit"  value="Submit">
         </Form>
 
         <script> 
             function getMenuId(id) {
-                return "https://localhost:44378/api/menu/"+ id; 
+                return "https://localhost:44378/api/Menu/"+ id; 
             }
         </script>
         </div>
 
+        <Form method = "DELETE" action = "https://localhost:44378/api/Menu" onsubmit="getMenuId(id)">
+            MenuId<input type="number" name = "id"> <br>
+            <input type="submit"  value="Submit">
+        </Form>
+
+        <script>
+            function getShopId(id) {
+                return "https://localhost:44378/api/Menu/{id};
+            }
+        </script>
+    </div>
+
+    <div class="Customer">
+        <h2>Customer</h2>
+        <hr>
+        <h3>Post</h3>
+        <Form method = "POST" action = "https://localhost:44378/api/Customer">
+            FirstName <input type="text" name = "FirstName"> <br>
+            LastName <input type="text" name = "LastName"> <br>
+            PaymentType <input type="text" name = "PaymentType"> <br>
+            CoffeeOrderId <input type="number" name = "CoffeeOrderId"> <br>
+            <input type="submit"  value="Submit">
+        </Form>
+
+        <h3>Get</h3>
+        <Form method = "GET" action = "api/Customer">
+            <input type="submit"  value="Submit">
+        </Form>
+
+        <h3>Get</h3>
+        <Form method = "GET" action = "https://localhost:44378/api/Customer" onsubmit="getCustomerId(id)" >
+            CustomerId<input type="number" name = "id"> <br>
+            <input type="submit"  value="Submit" >
+        </Form>
+
+        <h3>Update</h3>
+        <Form id="UpdateForm">
+            FirstName <input type="text" name = "FirstName"> <br>
+            LastName <input type="text" name = "LastName"> <br>
+            PaymentType <input type="text" name = "PaymentType"> <br>
+            CoffeeOrderId <input type="number" name = "CoffeeOrderId"> <br>
+            <input type="submit"  value="Submit">
+        </Form>
+
+        <h3>Delete</h3>
+        <Form method = "DELETE" action = "https://localhost:44378/api/Customer" onsubmit="getCustomerId(id)">
+            CustomerId<input type="number" name = "id"> <br>
+            <input type="submit"  value="Submit">
+        </Form>
+
+        <script>
+            function getCustomerId(id) {
+                return "https://localhost:44378/api/Customer/{id};
+            }
+        </script>
+    </div>
 </body>
 </html>
