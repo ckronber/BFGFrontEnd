@@ -101,5 +101,48 @@
             }
         </script>
     </div>
+  
+    <div class="Addition">
+        <h2>Additions</h2>
+        <hr>
+        <h3>Post</h3>
+        <Form method = "POST" action = "https://localhost:44378/api/Addition">
+            Name <input type="text" name = "Name"> <br>
+            Price <input type="decimal" name = "Price"> <br>
+            Coffee Order Id <input type="number" name = "CoffeeOrderId"> <br>
+            <input type="submit"  value="Submit">
+        </Form>
+
+        <h3>Get</h3>
+        <Form method = "GET" action = "https://localhost:44378/api/Addition">
+            <input type="submit"  value="Submit">
+        </Form>
+
+        <h3>Get</h3>
+        <Form method = "GET" action = "https://localhost:44378/api/Addition" onsubmit="getAdditionId(id)" >
+            AdditionId<input type="number" name = "id"> <br>
+            <input type="submit"  value="Submit" >
+        </Form>
+
+        <h3>Update</h3>
+        <Form id="UpdateForm">
+            Addition Id <input type="text" name = "AdditionId"> <br>
+            Name <input type="text" name = "Name"> <br>
+            Price <input type="decimal" name = "Price"> <br>
+            <input type="submit"  value="submit">
+        </Form>
+
+        <h3>Delete</h3>
+        <Form method = "DELETE" action = "https://localhost:44378/api/Addition" onsubmit="getAdditionId(id)">
+            ShopId<input type="number" name = "id"> <br> 
+            <input type="submit"  value="submit">
+        </Form>
+
+        <script> 
+            function getAdditionId(id) {
+                return "https://localhost:44378/api/Addition/"+ id; 
+            }
+        </script>
+    </div>
 </body>
 </html>
