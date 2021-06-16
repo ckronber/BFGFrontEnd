@@ -10,7 +10,7 @@
 </head>
 <body>
     <h1>BFG Coffee Shop</h1>
-    
+
     <div class="CoffeeShop">
         <h2>CoffeeShop</h2>
         <hr>
@@ -46,16 +46,62 @@
 
         <h3>Delete</h3>
         <Form method = "DELETE" action = "https://localhost:44378/api/CoffeeShop" onsubmit="getShopId(id)">
-            ShopId<input type="number" name = "id"> <br> 
+            ShopId<input type="number" name = "id"> <br>
             <input type="submit"  value="submit">
         </Form>
 
-        <script> 
+        <script>
             function getShopId(id) {
-                return "https://localhost:44378/api/CoffeeShop/"+ id; 
+                return "https://localhost:44378/api/CoffeeShop/"+ id;
             }
         </script>
     </div>
-    
+
+    <div class="Customer">
+        <h2>Customer</h2>
+        <hr>
+        <h3>Post</h3>
+        <Form method = "POST" action = "https://localhost:44378/api/Customer">
+            FirstName <input type="text" name = "FirstName"> <br>
+            LastName <input type="text" name = "LastName"> <br>
+            PaymentType <input type="phone" name = "PaymentType"> <br>
+            CoffeeOrderId <input type="url" name = "CoffeeOrderId"> <br>
+            <input type="submit"  value="Submit">
+        </Form>
+
+        <h3>Get</h3>
+        <Form method = "GET" action = "api/Customer">
+            <input type="submit"  value="Submit">
+        </Form>
+
+        <h3>Get</h3>
+        <Form method = "GET" action = "https://localhost:44378/api/Customer/" onsubmit="getCustomerId(id)" >
+            CustomerId<input type="number" name = "id"> <br>
+            <input type="submit"  value="Submit" >
+        </Form>
+
+        <h3>Update</h3>
+        <Form id="UpdateForm">
+            <!--Customer Id <input type="number" name = "CustomerId"> <br>-->
+            FirstName <input type="text" name = "FirstName"> <br>
+            LastName <input type="text" name = "LastName"> <br>
+            PaymentType <input type="phone" name = "PaymentType"> <br>
+            CoffeeOrderId <input type="url" name = "CoffeeOrderId"> <br>
+            <input type="submit"  value="submit">
+        </Form>
+
+        <h3>Delete</h3>
+        <Form method = "DELETE" action = "https://localhost:44378/api/Customer/" onsubmit="getCustomerId(id)">
+            CustomerId<input type="number" name = "id"> <br>
+            <input type="submit"  value="submit">
+        </Form>
+
+        <script>
+            function getCustomerId(id) {
+                return "https://localhost:44378/api/Customer/"+ id;
+            }
+        </script>
+    </div>
+
 </body>
 </html>
