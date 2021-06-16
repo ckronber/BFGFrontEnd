@@ -16,14 +16,14 @@ window.addEventListener( "load", function () {
     } );
 
     // Set up our request
-    XHR.open( "POST", "https://localhost:44378/api/CoffeeShop" );
+    XHR.open( "PUT", "https://localhost:44378/api/CoffeeShop/{CoffeeShopId}",false);
 
     // The data sent is what the user provided in the form
     XHR.send( FD );
   }
 
   // Access the form element...
-  const form = document.getElementById( "UpdateForm" );
+  const form = document.getElementById("UpdateForm");
 
   // ...and take over its submit event.
   form.addEventListener( "submit", function ( event ) {
