@@ -82,40 +82,9 @@ h2:after {
 
 /*-------PARAGRAPHS---------*/
 
-.long-copy {
-    line-height: 145%;
-    width: 70%;
-    margin-left: 15%;
-}
-
 .box p {
     font-size: 90%;
     line-height: 145%;
-}
-
-/*-------ICONS---------*/
-
-.icon-big {
-    font-size: 400%;
-    display: block;
-    color: #dd8452;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.icon-small {
-    display: inline-block;
-    width: 30px;
-    text-align: center;
-    color: #dd8452;
-    font-size: 120%;
-    margin-right: 10px;
-
-    /* To Align Text and Icons */
-
-    line-height: 120%;
-    vertical-align: middle;
-    margin-top: -5px;
 }
 
 /*-------HEADER---------*/
@@ -220,134 +189,10 @@ input[type=submit] {
     color: #fff;
 }
 
-/*-------FEATURES---------*/
-
-.section-features .long-copy {
-    margin-bottom: 15px;
-}
-
-/*-------HOW-IT-WORKS---------*/
-
-.section-steps {
-    background-color: #f4f4f4;
-}
-
-.steps-box:first-child {
-    text-align: right;
-    padding-right: 3%;
-    margin-top: 30px;
-}
-
-.steps-box:last-child {
-    text-align: left;
-    padding-left: 3%;
-    margin-top: 70px;
-}
-
-.app-screen {
-    width: 60%;
-}
-
-.works-step {
-    margin-bottom: 50px;
-}
-
-.works-step:last-of-type {
-    margin-bottom: 80px;
-}
-
-.works-step div {
-    color: #b06941;
-    border: 2px solid #b06941;
-    display: inline-block;
-    border-radius: 50%;
-    height: 55px;
-    width: 55px;
-    text-align: center;
-    font-size: 165%;
-    padding: 5px;
-    float: left;
-    margin-right: 25px;
-}
-
 .btn-app img {
     height: 50px;
     width: auto;
     margin-right: 15px;
-}
-
-/*-------BUNNY-FARMERS--------*/
-
-.box img {
-    width: 100%;
-    height: 165px;
-    margin-bottom: 15px;
-    -o-object-fit: scale-down;
-       object-fit: scale-down;
-}
-
-
-.farm-feature {
-    margin-bottom: 5px;
-}
-
-.section-farms img:hover {
-    transform: scale(1.5);
-    transition: transform 0.5s;
-}
-
-/*-------PRICE-PLAN-------*/
-
-.section-plans {
-    background-color: #f4f4f4;
-}
-
-.plan-box {
-    background-color: #fff;
-    border-radius: 5px;
-    width: 90%;
-    margin-left: 5%;
-    box-shadow: 0 2px 2px #efefef;
-}
-
-.plan-box div {
-    padding: 15px;
-    border-bottom: 1px solid #e8e8e8;
-}
-
-.plan-box div:first-child {
-    background-color: #fcfcfc;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
-.plan-box div:last-child {
-    text-align: center;
-    border: 0;
-}
-
-.plan-price {
-    font-size: 300%;
-    margin-bottom: 10px;
-    font-weight: 100;
-    color: #dd8452;
-}
-
-.plan-price span {
-    font-size: 30%;
-    font-weight: 300;
-}
-
-.plan-price-bunny {
-    font-size: 80%;
-}
-
-.plan-box ul {
-    list-style: none;
-}
-
-.plan-box ul li {
-    padding: 5px 0;
 }
 
 /*-------FORM-------*/
